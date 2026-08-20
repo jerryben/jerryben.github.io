@@ -20,7 +20,7 @@ npm run dev
 
 Open the URL it prints (`http://localhost:8080`). Editing any file under `src/` reloads the browser automatically.
 
-To produce the static output without a dev server run:
+To produce the static output without a dev server:
 
 ```bash
 npm run build

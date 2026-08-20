@@ -1,9 +1,9 @@
-name: Build and deploy to GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches:
+      - main  # Change to 'master' if your default branch is master
 
 permissions:
   contents: read
@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -36,7 +36,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
+          path: '_site'  # Default output directory for Eleventy
 
   deploy:
     needs: build
