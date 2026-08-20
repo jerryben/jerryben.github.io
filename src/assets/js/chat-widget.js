@@ -22,8 +22,8 @@
   "use strict";
 
   const CHAT_CONFIG = {
-    mode: "demo", // "demo" | "live"
-    apiEndpoint: "https://YOUR-WORKER-SUBDOMAIN.workers.dev/chat",
+    mode: "live", // "demo" | "live"
+    apiEndpoint: "https://jerry-site-chat.jerryben.workers.dev/api/chat",
     maxHistoryMessages: 8,
     typingDelayMs: 550, // only used in demo mode, to feel like a real response
   };
@@ -33,34 +33,44 @@
   // is scored against the visitor's message by keyword overlap.
   const KNOWLEDGE_BASE = [
     {
-      keywords: ["who", "jerry", "about", "background"],
+      // Deliberately specific — "jerry" and "about" were removed from this
+      // list because they appear in almost every visitor question, which
+      // made this entry win by default over the category actually being
+      // asked about (e.g. "What are Jerry's core skills?" matched this
+      // entry, not the skills one, purely because it contains "Jerry").
+      keywords: ["background", "bio", "who is jerry", "who are you"],
       answer:
-        "Jerry is a Cloud & DevOps Engineer with 20+ years across networking, systems administration, cloud engineering, security and DevOps — and more recently, AI infrastructure. You can read more in the About section on the homepage.",
+        "Jeremiah Onwoh is a Technical Systems & Infrastructure Engineer with 15+ years across networking, systems administration, cloud engineering, security and DevOps — and more recently, agentic AI and LLM infrastructure. You can read more in the About section on the homepage.",
     },
     {
       keywords: ["skill", "stack", "expertise", "technology", "tech", "tools"],
       answer:
-        "Core areas are Cloud & DevOps (AWS, Kubernetes, Docker, Terraform, CI/CD), Networks & Systems (Linux, TCP/IP, VPN), Security, Automation (Python, Bash, Node.js), and AI & LLMs (Ollama, LiteLLM, AI agents). See the Expertise section for the full breakdown.",
+        "Core areas are Cloud & DevOps (AWS, Kubernetes, Docker, CI/CD), AI & LLMs (Ollama, LiteLLM, RAG, MCP, AI agents), Security & Reliability, Automation (Python, Bash, Node.js, n8n), and Networks & Systems (Linux, TCP/IP, VPN). See the Expertise section for the full breakdown.",
     },
     {
       keywords: ["project", "build", "building", "working on", "portfolio"],
       answer:
-        "Current projects include a Local LLM & AI Automation Lab, Cloud & Kubernetes Labs, and Igbo Voice AI. Check out the Projects page for full write-ups on each.",
+        "Current projects include a Local LLM & AI Automation Lab, a Job Hunter Agent for automated career search, Athena AI (a voice-enabled local assistant), IgboAmaka (an Igbo language-learning platform), Cloud & Kubernetes Labs, and a RAG-powered chatbot assistant. Check out the Projects page for full write-ups on each.",
     },
     {
       keywords: ["blog", "write", "writing", "article", "post"],
       answer:
-        "There's a blog covering DevOps, cloud and AI infrastructure notes — including how this chat widget itself was built. Find it at /blog/.",
+        "There's a blog covering DevOps, cloud and AI infrastructure notes — including how this chat widget itself was built and a GitLab CI/CD pipeline with Kubernetes. Find it at /blog/.",
     },
     {
-      keywords: ["hire", "contact", "email", "available", "availability", "work with", "freelance", "remote"],
+      keywords: ["contact", "email", "reach", "get in touch", "linkedin", "message"],
       answer:
-        "Jerry is open to remote Cloud, DevOps, infrastructure and AI-focused opportunities. The fastest way to reach him is the Email link in the Contact section, or LinkedIn.",
+        "You can reach Jerry via email at onwohjeremiah@gmail.com through the Contact section, or on LinkedIn at linkedin.com/in/jerrybenoc — the Contact section also has a direct Email button and a résumé download.",
+    },
+    {
+      keywords: ["available", "availability", "hire", "freelance", "remote work", "open to", "opportunity", "work with", "available for work"],
+      answer:
+        "Yes — Jerry is based in Nigeria and available for remote work. He's open to remote Cloud, Automation, DevOps, infrastructure, technical support and AI-focused roles. If you have an opportunity in mind, reach out via the Contact section.",
     },
     {
       keywords: ["education", "degree", "study", "certification", "certificate"],
       answer:
-        "MSc Information Technology, National Open University of Nigeria (2013–2017), plus certifications including Google IT Support, Cloud Security, and the ALX Professional Foundation.",
+        "MSc Information Technology, National Open University of Nigeria (2013–2017), plus certifications including Kubernetes and Cloud Native Associate (KCNA), Google IT Support, Cloud Security, ALX Professional Foundation, and ALX AI Career Essential.",
     },
     {
       keywords: ["ai", "llm", "chatbot", "assistant", "ollama"],
@@ -82,6 +92,7 @@
   const form = document.getElementById("chat-form");
   const input = document.getElementById("chat-input");
   const sendBtn = document.getElementById("chat-send");
+  const suggestions = document.getElementById("chat-suggestions");
 
   if (!widget || !toggleBtn || !panel || !form) return;
 
@@ -214,15 +225,13 @@
   }
 
   // ---------------------------------------------------------------------
-  // Submit handler
+  // Submit handling (shared by the form and the suggestion chips)
   // ---------------------------------------------------------------------
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const message = input.value.trim();
+  async function sendMessage(message) {
     if (!message) return;
 
-    input.value = "";
-    input.style.height = "auto";
+    if (suggestions) suggestions.classList.add("is-hidden");
+
     input.disabled = true;
     sendBtn.disabled = true;
 
@@ -248,5 +257,20 @@
       sendBtn.disabled = false;
       input.focus();
     }
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const message = input.value.trim();
+    if (!message) return;
+    input.value = "";
+    input.style.height = "auto";
+    sendMessage(message);
   });
+
+  if (suggestions) {
+    suggestions.querySelectorAll("button[data-question]").forEach((btn) => {
+      btn.addEventListener("click", () => sendMessage(btn.dataset.question));
+    });
+  }
 })();

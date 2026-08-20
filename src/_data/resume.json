@@ -1,0 +1,26 @@
+{
+  "summary": "Cloud & DevOps Engineer and IT infrastructure professional with 15+ years of hands-on experience across networking, systems administration, cloud engineering, security, DevOps and technical support. More recently exploring local LLMs, AI-assisted engineering and AI infrastructure.",
+  "skills": [
+    { "category": "Cloud & DevOps", "items": ["AWS", "Kubernetes", "Docker", "Terraform", "CI/CD"], "description": "AWS, Cloud Engineering, Kubernetes, Docker, Terraform, CI/CD and infrastructure automation." },
+    { "category": "Networks & Systems", "items": ["Linux", "TCP/IP", "VPN", "MikroTik"], "description": "Network engineering, network administration, Linux and systems administration, troubleshooting and infrastructure operations." },
+    { "category": "Security & Reliability", "items": ["Security", "RBAC", "Compliance"], "description": "Network security, cloud security, access control, RBAC, IT compliance and operational best practices." },
+    { "category": "Automation & Code", "items": ["Python", "Bash", "Node.js", "n8n", "APIs"], "description": "Python, Bash, JavaScript, Node.js, API integration and automation workflows." },
+    { "category": "AI & LLMs", "items": ["Ollama", "LLMs", "MCP", "RAG", "Chromedb", "ChatBot",  "AI Agents", "LiteLLM"], "description": "Generative AI, local LLM deployment, LLM evaluation, AI agents and AI-assisted engineering." },
+    { "category": "Observability & Tooling", "items": ["Prometheus", "Grafana", "Jenkins", "GitLab"], "description": "Prometheus, Grafana, Jenkins, GitLab CI/CD, Nexus, SonarQube and Portainer." }
+  ],
+  "experience": [
+    { "period": "20+ years", "title": "IT Infrastructure & Technical Administration", "description": "Network and systems administration, technical support, Linux/Windows environments, directory services, RBAC and infrastructure operations." },
+    { "period": "Projects", "title": "Large-Scale Connectivity", "description": "Contributed to campus-wide broadband projects across six tertiary institutions, combining networking, systems and project coordination." },
+    { "period": "Project management", "title": "Technology Delivery", "description": "Coordinated technical projects, stakeholders, requirements, deliverables and operational problem solving." },
+    { "period": "Remote", "title": "Application Testing", "description": "Worked remotely as an application tester, identifying defects, reproducing issues and documenting results with attention to detail." },
+    { "period": "Now", "title": "Cloud • DevOps • AI", "description": "Expanding hands-on capability in AWS, Kubernetes, Docker, Terraform, CI/CD, automation, local LLMs, AI agents and AI infrastructure." }
+  ],
+  "education": { "degree": "MSc Information Technology", "school": "National Open University of Nigeria", "period": "2013–2017" },
+  "certifications": [
+    { "name": "Kubernetes and Cloud Native Associate(KCNA)", "period": "2025" },
+    { "name": "Google IT Support Professional Certificate", "period": "2024" },
+    { "name": "Cloud Security", "period": "2024" },
+    { "name": "ALX Professional Foundation", "period": "2024" },
+    { "name": "ALX AI Career Essential", "period": "2024" }
+  ]
+}

@@ -1,0 +1,45 @@
+.resume-page{max-width:760px}
+.resume-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px;gap:12px;flex-wrap:wrap}
+.resume-toolbar-actions{display:flex;gap:10px}
+.resume-toolbar .button{font-size:13px}
+
+.resume-sheet{border:1px solid var(--border);background:var(--surface);border-radius:14px;padding:48px}
+.resume-header{border-bottom:1px solid var(--border);padding-bottom:20px;margin-bottom:28px}
+.resume-header h1{font-size:36px;letter-spacing:-1.5px;margin:0 0 4px}
+.resume-role{color:var(--accent);font:13px var(--mono);margin:0 0 10px}
+.resume-contact{color:var(--muted-2);font-size:13px;margin:0}
+
+.resume-sheet section{margin-bottom:28px}
+.resume-sheet section:last-child{margin-bottom:0}
+.resume-sheet h2{font:11px var(--mono);letter-spacing:1.5px;color:var(--accent);text-transform:uppercase;margin:0 0 14px}
+.resume-sheet p{color:var(--muted);font-size:14.5px;margin:0}
+
+.resume-skills{display:grid;gap:8px;font-size:14px;color:var(--muted)}
+.resume-skills strong{color:var(--text)}
+
+.resume-entry{margin-bottom:16px}
+.resume-entry:last-child{margin-bottom:0}
+.resume-entry-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.resume-entry-head h3{font-size:16px;margin:0;color:var(--text)}
+.resume-entry-head span{font:11px var(--mono);color:var(--muted-2);white-space:nowrap}
+
+.resume-certs{list-style:none;padding:0;margin:0;color:var(--muted);font-size:14px;display:grid;gap:6px}
+
+@media(max-width:600px){
+  .resume-sheet{padding:28px}
+}
+
+/* ---------- Print ---------- */
+@media print{
+  .nav,.site-footer,.chat-widget,.no-print{display:none!important}
+  body{background:#fff;color:#111}
+  body:before{display:none}
+  .resume-page{max-width:none;padding:0!important}
+  .resume-sheet{border:0;background:#fff;padding:0;color:#111}
+  .resume-header{border-color:#ddd}
+  .resume-header h1,.resume-entry-head h3{color:#111}
+  .resume-role{color:#333}
+  .resume-contact,.resume-sheet p,.resume-skills,.resume-certs{color:#333}
+  .resume-sheet h2{color:#000}
+  .resume-entry{page-break-inside:avoid}
+}

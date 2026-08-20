@@ -1,34 +1,54 @@
 [
   {
-    "title": "About Jerry",
-    "content": "Jerry is a Cloud & DevOps Engineer and IT infrastructure professional with 20+ years of hands-on experience across networking, systems administration, cloud engineering, security, DevOps and technical support. His career grew from network and systems administration into cloud engineering, DevOps and infrastructure automation."
+    "title": "About Jeremiah",
+    "content": "Jeremiah Onwoh is a Technical Systems & Infrastructure Engineer with 15+ years of hands-on experience across networking, systems and network administration, cloud engineering, security, DevOps and technical support. His career grew from network and systems administration into cloud engineering, DevOps and infrastructure automation, and more recently into agentic AI and LLM infrastructure — building RAG systems, local LLM deployments and AI agents with tools like Ollama, LiteLLM, Qdrant, pgvector and ChromaDB."
   },
   {
     "title": "Core skills",
-    "content": "Cloud & DevOps: AWS, Kubernetes, Docker, Terraform, CI/CD. Networks & Systems: Linux, TCP/IP, VPN, MikroTik, systems administration. Security & Reliability: network security, cloud security, RBAC, IT compliance. Automation & Code: Python, Bash, JavaScript, Node.js, API integration. AI & LLMs: generative AI, local LLM deployment (Ollama, LiteLLM), AI agents, AI-assisted engineering. Observability & Tooling: Prometheus, Grafana, Jenkins, GitLab CI/CD, SonarQube, Portainer."
+    "content": "Cloud & DevOps: AWS, Kubernetes, Docker, infrastructure as code, CI/CD. AI & LLMs: generative AI, local LLM deployment (Ollama, LiteLLM), AI agents, RAG (Retrieval-Augmented Generation), MCP, vector databases (ChromaDB, Qdrant), chatbots. Security & Reliability: network and cloud security, RBAC, ITGC & ITAC, IT compliance. Automation & Code: Python, Bash, JavaScript, Node.js, n8n, API integration. Networks & Systems: Linux, TCP/IP, VPN, MikroTik, systems administration. Observability & Tooling: Prometheus, Grafana, Jenkins, GitLab CI/CD, SonarQube, Portainer, DataDog."
   },
   {
     "title": "Project: Local LLM & AI Automation Lab",
     "content": "An ongoing project experimenting with Ollama, open-source models, LiteLLM and n8n to build practical local AI and agentic workflows, including a Telegram-triggered research agent."
   },
   {
-    "title": "Project: Cloud & Kubernetes Labs",
-    "content": "Hands-on infrastructure environments covering containers, Kubernetes, infrastructure as code with Terraform, CI/CD pipelines with Jenkins, and monitoring with Prometheus and Grafana."
+    "title": "Project: Job Hunter Agent (securejobs)",
+    "content": "An open-source, local-first career automation platform that ingests job postings directly from Greenhouse, Lever and Ashby, deterministically filters and scores them against a candidate profile, stores postings with vector embeddings in PostgreSQL/pgvector, and uses local LLMs via Ollama to generate tailored resumes, cover letters and interview prep — with Telegram and email alerts for high-scoring matches."
   },
   {
-    "title": "Project: Igbo Voice AI",
-    "content": "An exploratory project converting English text to spoken Igbo using local language models and text-to-speech technology, aimed at closing the gap in AI tooling for under-served African languages."
+    "title": "Project: Athena AI",
+    "content": "A self-hosted, voice-enabled personal assistant built on local quantized LLMs via Ollama, with FastAPI orchestration, Qdrant for long-term semantic memory, Whisper for local voice transcription, and direct integration with Obsidian and Joplin notes. It monitors system resources, manages Docker containers and executes shell commands through structured tool-calling, running fully offline for privacy."
+  },
+  {
+    "title": "Project: Learn Igbo AI (IgboAmaka)",
+    "content": "IgboAmaka is a local-first, open-source language-learning platform for Standard Igbo. It combines an 8,485-word dictionary, user corrections and a CPU-optimized NLLB-200 model in a cascading fallback architecture, with context-aware audio to resolve Igbo homophones (tone-dependent words). It runs entirely offline, aimed at closing the gap in AI tooling for under-served African languages."
+  },
+  {
+    "title": "Project: Cloud & Kubernetes Labs",
+    "content": "Hands-on infrastructure environments covering containers, Kubernetes, infrastructure as code with Terraform, CI/CD pipelines with Jenkins and GitLab CI/CD, and monitoring with Prometheus and Grafana."
+  },
+  {
+    "title": "Project: RAG-Powered Chatbot Assistant",
+    "content": "An open-source, self-hosted RAG (Retrieval-Augmented Generation) chatbot widget for static portfolio sites, built with FastAPI, Ollama (local embeddings and generation) and ChromaDB as a vector store — answering visitor questions grounded in a JSON knowledge base, with zero API costs and no data leaving the host machine."
+  },
+  {
+    "title": "Blog",
+    "content": "Jerry writes about the projects above as they happen: building this portfolio site with Eleventy and its AI chat widget, running local LLMs with Ollama and LiteLLM, and setting up a two-repo GitLab CI/CD pipeline with Kubernetes using the GitLab Kubernetes Agent. Posts are at /blog/."
   },
   {
     "title": "Education",
-    "content": "MSc Information Technology, National Open University of Nigeria (2013-2017). Certifications: Google IT Support (2023-2024), Cloud Security (2024), ALX Professional Foundation (2024)."
+    "content": "MSc Information Technology, National Open University of Nigeria (2013-2017). Certifications: Kubernetes and Cloud Native Associate (KCNA) (2025), Google IT Support Professional Certificate (2024), Cloud Security (2024), ALX Professional Foundation (2024), ALX AI Career Essential (2024)."
   },
   {
-    "title": "Availability and contact",
-    "content": "Jerry is based in Nigeria and available for remote work. He's open to remote Cloud, DevOps, infrastructure, technical support and AI-focused opportunities. The best way to reach him is by email (see the Contact section on the site) or LinkedIn."
+    "title": "Availability",
+    "content": "Jerry is based in Nigeria and is available for remote work. He is open to remote Cloud, Automation, DevOps, infrastructure, technical support and AI-focused opportunities."
+  },
+  {
+    "title": "Contact",
+    "content": "The best way to contact Jerry is by email at onwohjeremiah@gmail.com via the Contact section on the site, or on LinkedIn at https://linkedin.com/in/jerrybenoc. The Contact section also links to his résumé at /assets/resume.pdf and his GitHub at https://github.com/jerryben."
   },
   {
     "title": "Career history",
-    "content": "20+ years in IT infrastructure and technical administration across Linux/Windows environments, directory services and RBAC. Contributed to campus-wide broadband connectivity projects across six tertiary institutions. Coordinated technology delivery projects with stakeholders and requirements. Worked remotely as an application tester."
+    "content": "15+ years in IT infrastructure and technical administration across Linux/Windows environments, directory services and RBAC. Contributed to campus-wide broadband connectivity projects across six tertiary institutions. Coordinated technology delivery projects with stakeholders and requirements. Worked remotely as an application tester. Now expanding into cloud, DevOps, automation and agentic AI / MCP infrastructure."
   }
 ]

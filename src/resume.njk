@@ -1,0 +1,62 @@
+---
+layout: layouts/base.njk
+title: Resume | Jerry
+description: Jerry's resume — Cloud & DevOps Engineer, Network & Systems Infrastructure Professional.
+templateClass: resume
+---
+<article class="section resume-page">
+  <div class="resume-toolbar no-print">
+    <a class="button ghost" href="{{ '/' | url }}">← Back to site</a>
+    <div class="resume-toolbar-actions">
+      <a class="button ghost" href="{{ '/assets/resume.pdf' | url }}" download>Download PDF ↓</a>
+      <button class="button primary" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <div class="resume-sheet">
+    <header class="resume-header">
+      <h1>{{ site.name }}</h1>
+      <p class="resume-role">{{ site.role }}</p>
+      <p class="resume-contact">{{ site.email }} &nbsp;·&nbsp; {{ site.linkedin }} &nbsp;·&nbsp; {{ site.github }} &nbsp;·&nbsp; {{ site.location }}</p>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>{{ resume.summary }}</p>
+    </section>
+
+    <section>
+      <h2>Core skills</h2>
+      <div class="resume-skills">
+        {% for skill in resume.skills %}
+        <div><strong>{{ skill.category }}:</strong> {{ skill.items | join(", ") }}</div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      {% for item in resume.experience %}
+      <div class="resume-entry">
+        <div class="resume-entry-head"><h3>{{ item.title }}</h3><span>{{ item.period }}</span></div>
+        <p>{{ item.description }}</p>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="resume-entry">
+        <div class="resume-entry-head"><h3>{{ resume.education.degree }}</h3><span>{{ resume.education.period }}</span></div>
+        <p>{{ resume.education.school }}</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul class="resume-certs">
+        {% for cert in resume.certifications %}<li>{{ cert.name }} — {{ cert.period }}</li>{% endfor %}
+      </ul>
+    </section>
+  </div>
+</article>

@@ -2,9 +2,11 @@ name = "jerry-site-chat"
 main = "worker.js"
 compatibility_date = "2026-08-01"
 
-# ANTHROPIC_API_KEY is a secret, not set here.
+# GEMINI_API_KEY is a secret, not set here — get it from https://aistudio.google.com/app/apikey
 # After installing wrangler, run:
-#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put GEMINI_API_KEY
+#
+# The worker also accepts GOOGLE_API_KEY or GOOGLE_GENERATIVE_AI_API_KEY as alternatives.
 #
 # Optional next steps once this is working:
 #   - Add a rate limit (Cloudflare dashboard → your Worker → Settings → Rate limiting rules,

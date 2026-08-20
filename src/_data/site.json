@@ -1,11 +1,11 @@
 {
-  "name": "Jerry",
-  "role": "Cloud, Automation & DevOps Engineer",
+  "name": "Jeremiah Onwoh",
+  "role": "Technical Systems & Infrastructure Engineer",
   "title": "Jerry | Cloud & DevOps Engineer",
   "description": "Jerry — Cloud & DevOps Engineer, Network & Systems Infrastructure Professional.",
   "url": "https://jerryben.github.io",
   "email": "onwohjeremiah@gmail.com",
-  "linkedin": "https://www.linkedin.com/in/jerrybenoc",
+  "linkedin": "https://linkedin.com/in/jerrybenoc",
   "github": "https://github.com/jerryben",
   "gitlab": "https://gitlab.com/jerryben",
   "location": "Based in Nigeria",
@@ -14,6 +14,7 @@
     { "label": "About", "url": "/#about" },
     { "label": "Expertise", "url": "/#expertise" },
     { "label": "Projects", "url": "/projects/" },
+    { "label": "Resume", "url": "/resume/" },
     { "label": "Blog", "url": "/blog/" },
     { "label": "Contact", "url": "/#contact" }
   ]
