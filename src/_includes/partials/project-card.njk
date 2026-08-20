@@ -1,0 +1,12 @@
+<article class="card project-card">
+  <small>{{ project.data.category }}</small>
+  <h3>{{ project.data.title }}</h3>
+  <p>{{ project.data.summary }}</p>
+  <footer>
+    <span class="tools">{{ project.data.tools | join(" / ") }}</span>
+    <span class="card-links">
+      <a href="{{ project.url | url }}">Read more →</a>
+      {% if project.data.link %}<a href="{{ project.data.link }}" target="_blank" rel="noopener">Visit ↗</a>{% endif %}
+    </span>
+  </footer>
+</article>

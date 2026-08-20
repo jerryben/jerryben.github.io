@@ -1,0 +1,10 @@
+<article class="card post-card">
+  <small>{{ post.date | readableDate }} · {{ post.templateContent | readingTime }}</small>
+  <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+  <p>{{ post.data.description }}</p>
+  {% if post.data.tags %}
+  <footer class="tags">
+    {% for tag in post.data.tags %}<b>{{ tag }}</b>{% endfor %}
+  </footer>
+  {% endif %}
+</article>

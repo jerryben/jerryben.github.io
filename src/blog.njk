@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+title: Blog | Jerry
+description: Notes on cloud, DevOps, AI infrastructure and building this site.
+---
+<section class="section">
+  <div class="head">
+    <div><p class="label">BLOG</p><h2>Notes on infrastructure, DevOps and AI.</h2></div>
+    <p class="muted">Writing about the projects above as they happen — what worked, what didn't, and why.</p>
+  </div>
+  <div class="grid posts">
+    {% for post in collections.posts %}
+      {% include "partials/post-card.njk" %}
+    {% endfor %}
+  </div>
+  {% if collections.posts.length == 0 %}
+  <p class="muted">Nothing published yet — the first post is on its way.</p>
+  {% endif %}
+</section>

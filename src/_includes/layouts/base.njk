@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% include "partials/head.njk" %}
+</head>
+<body>
+{% include "partials/nav.njk" %}
+<main id="main">
+{{ content | safe }}
+</main>
+{% include "partials/footer.njk" %}
+{% include "partials/chat-widget.njk" %}
+<script src="{{ '/assets/js/main.js' | url }}" defer></script>
+<script src="{{ '/assets/js/chat-widget.js' | url }}" defer></script>
+</body>
+</html>

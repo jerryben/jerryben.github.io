@@ -1,0 +1,34 @@
+[
+  {
+    "title": "About Jerry",
+    "content": "Jerry is a Cloud & DevOps Engineer and IT infrastructure professional with 20+ years of hands-on experience across networking, systems administration, cloud engineering, security, DevOps and technical support. His career grew from network and systems administration into cloud engineering, DevOps and infrastructure automation."
+  },
+  {
+    "title": "Core skills",
+    "content": "Cloud & DevOps: AWS, Kubernetes, Docker, Terraform, CI/CD. Networks & Systems: Linux, TCP/IP, VPN, MikroTik, systems administration. Security & Reliability: network security, cloud security, RBAC, IT compliance. Automation & Code: Python, Bash, JavaScript, Node.js, API integration. AI & LLMs: generative AI, local LLM deployment (Ollama, LiteLLM), AI agents, AI-assisted engineering. Observability & Tooling: Prometheus, Grafana, Jenkins, GitLab CI/CD, SonarQube, Portainer."
+  },
+  {
+    "title": "Project: Local LLM & AI Automation Lab",
+    "content": "An ongoing project experimenting with Ollama, open-source models, LiteLLM and n8n to build practical local AI and agentic workflows, including a Telegram-triggered research agent."
+  },
+  {
+    "title": "Project: Cloud & Kubernetes Labs",
+    "content": "Hands-on infrastructure environments covering containers, Kubernetes, infrastructure as code with Terraform, CI/CD pipelines with Jenkins, and monitoring with Prometheus and Grafana."
+  },
+  {
+    "title": "Project: Igbo Voice AI",
+    "content": "An exploratory project converting English text to spoken Igbo using local language models and text-to-speech technology, aimed at closing the gap in AI tooling for under-served African languages."
+  },
+  {
+    "title": "Education",
+    "content": "MSc Information Technology, National Open University of Nigeria (2013-2017). Certifications: Google IT Support (2023-2024), Cloud Security (2024), ALX Professional Foundation (2024)."
+  },
+  {
+    "title": "Availability and contact",
+    "content": "Jerry is based in Nigeria and available for remote work. He's open to remote Cloud, DevOps, infrastructure, technical support and AI-focused opportunities. The best way to reach him is by email (see the Contact section on the site) or LinkedIn."
+  },
+  {
+    "title": "Career history",
+    "content": "20+ years in IT infrastructure and technical administration across Linux/Windows environments, directory services and RBAC. Contributed to campus-wide broadband connectivity projects across six tertiary institutions. Coordinated technology delivery projects with stakeholders and requirements. Worked remotely as an application tester."
+  }
+]

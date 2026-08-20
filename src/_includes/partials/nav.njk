@@ -1,0 +1,11 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="{{ '/' | url }}">{{ site.name[0] }}<span>.</span></a>
+  <nav id="primary-nav">
+    {% for item in site.nav %}<a href="{{ item.url | url }}">{{ item.label }}</a>{% endfor %}
+  </nav>
+  <a class="nav-cta" href="{{ '/#contact' | url }}">Let's connect ↗</a>
+  <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>

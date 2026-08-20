@@ -1,0 +1,79 @@
+---
+layout: layouts/base.njk
+title: Jerry | Cloud & DevOps Engineer
+---
+<section class="hero section" id="top">
+  <div>
+    <p class="eyebrow"><b>●</b> CLOUD • DEVOPS • INFRASTRUCTURE • SECURITY • AI</p>
+    <h1>I build <em>reliable</em><br>technology systems.</h1>
+    <p class="hero-text">I'm Jerry — an IT and infrastructure professional with 15+ years of hands-on experience across networking, systems & network administration, cloud engineering, security, DevOps, technical support and AI-assisted engineering.</p>
+    <div class="actions"><a class="button primary" href="{{ '/#contact' | url }}">Work with me →</a><a class="button ghost" href="{{ '/blog/' | url }}">Read the blog</a></div>
+    <div class="meta">{{ site.location }} &nbsp; • &nbsp; {{ site.availability }}</div>
+  </div>
+  <div class="visual">
+    <div class="terminal">
+      <div class="terminal-bar"><i></i><i></i><i></i><span>jerry@cloudlab:~</span></div>
+      <div class="terminal-body">
+        <p><b>$</b> whoami</p><p class="accent">cloud-devops-support-engineer</p>
+        <p><b>$</b> skills --core</p><p><span>AWS</span> · <span>Kubernetes</span> · IAC . <span>Automation</span></p>
+        <p>Linux · Docker · Python · Bash</p><p>Networking · Security · CI/CD . Audit</p>
+        <p><b>$</b> focus --now</p><p class="accent">Agentic AI / LLM infrastructure</p>
+        <p>▌</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section split">
+  <div><p class="label">01 / ABOUT</p><h2>Infrastructure is where my journey started. <span>Cloud, DevOps and AI are where it is going.</span></h2></div>
+  <div class="copy">
+    <p>My career has grown from network and systems administration into cloud engineering, DevOps and infrastructure automation. That foundation matters: I understand technology not only as code and services, but as systems that have to work reliably for real people.</p>
+    <p>I enjoy troubleshooting difficult technical problems, automating repetitive work, strengthening security, and turning complex infrastructure into something practical, documented and maintainable.</p>
+    <p>More recently, I've been exploring process automation, local LLMs, AI-assisted engineering, model evaluation, RAG Systems, agentic workflows and AI infrastructure with tools such as Ollama, LiteLLM, qdrant, pgvector, postgres, Chromadb.</p>
+  </div>
+</section>
+
+<section id="expertise" class="section">
+  <div class="head"><div><p class="label">02 / EXPERTISE</p><h2>What I bring to the table.</h2></div><p class="muted">A practical technology stack built over years of solving real infrastructure problems.</p></div>
+  <div class="grid skills">
+    <article><small>01</small><h3>Cloud & DevOps</h3><p>AWS, Cloud Engineering, Kubernetes, Docker, IAC, CI/CD and infrastructure automation.</p><div class="tags"><b>AWS</b><b>K8s</b><b>Docker</b><b>IAC</b><b>CI/CD</b></div></article>
+    <article><small>02</small><h3>AI & LLMs</h3><p>Generative AI, local LLM deployment, LLM evaluation, AI agents and AI-assisted engineering.</p><div class="tags"><b>Ollama</b><b>LLMs</b><b>AI Agents</b><b>LiteLLM</b><b>MCP</b><b>Chromdb</b><b>RAG</b><b>Qdrant</b><b>ChatBot</b></div></article>
+    <article><small>03</small><h3>Security & Reliability</h3><p>Network security, cloud security, access control, RBAC, IT compliance and operational best practices.</p><div class="tags"><b>Security</b><b>RBAC</b><b>ITGC & ITAC</b><b>Compliance</b></div></article>
+    <article><small>04</small><h3>Automation & Code</h3><p>Python, Bash, JavaScript, Node.js, n8n, API integration and automation workflows.</p><div class="tags"><b>Python</b><b>n8n</b><b>Bash</b><b>Node.js</b><b>APIs</b></div></article>
+    <article><small>05</small><h3>Networks & Systems</h3><p>Network engineering, network administration, Linux and systems administration, troubleshooting and infrastructure operations.</p><div class="tags"><b>Linux</b><b>TCP/IP</b><b>VPN</b><b>MikroTik</b></div></article>
+    <article><small>06</small><h3>Observability & Tooling</h3><p>Prometheus, Grafana, Jenkins, GitLab CI/CD, Nexus, SonarQube and Portainer.</p><div class="tags"><b>Prometheus</b><b>Grafana</b><b>Jenkins</b><b>GitLab</b><b>DataDog</b></div></article>
+  </div>
+</section>
+
+<section id="journey" class="section">
+  <p class="label">03 / JOURNEY</p><div class="head"><h2>From networks to <span>cloud and AI.</span></h2><p class="muted">A career built around learning, troubleshooting and making technology work.</p></div>
+  <div class="timeline">
+    <div><small>15+ YEARS</small><section><h3>IT Infrastructure & Technical Administration</h3><p>Network and systems administration, technical support, Linux/Windows environments, directory services, RBAC and infrastructure operations.</p></section></div>
+    <div><small>PROJECTS</small><section><h3>Large-Scale Connectivity</h3><p>Contributed to campus-wide broadband projects across six tertiary institutions, combining networking, systems and project coordination.</p></section></div>
+    <div><small>PROJECT MANAGEMENT</small><section><h3>Technology Delivery</h3><p>Coordinated technical projects, stakeholders, requirements, deliverables and operational problem solving.</p></section></div>
+    <div><small>REMOTE</small><section><h3>Application Testing</h3><p>Worked remotely as an application tester, identifying defects, reproducing issues and documenting results with attention to detail.</p></section></div>
+    <div><small>NOW</small><section><h3>Cloud • DevOps •Automation • AI</h3><p>Expanding hands-on capability in AWS, Kubernetes, Docker, Terraform, CI/CD, automation, local LLMs, AI agents, MCP and AI infrastructure.</p></section></div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="head"><div><p class="label">04 / SELECTED WORK</p><h2>Things I'm building and exploring.</h2></div><a class="button ghost" href="{{ '/projects/' | url }}">View all projects →</a></div>
+  <div class="grid projects">
+    {% for project in collections.featuredProjects | limit(3) %}
+      {% include "partials/project-card.njk" %}
+    {% endfor %}
+  </div>
+</section>
+
+<section id="blog-preview" class="section">
+  <div class="head"><div><p class="label">05 / WRITING</p><h2>From the blog.</h2></div><a class="button ghost" href="{{ '/blog/' | url }}">Read all posts →</a></div>
+  <div class="grid posts">
+    {% for post in collections.posts | limit(2) %}
+      {% include "partials/post-card.njk" %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section"><div class="education"><div><p class="label">06 / EDUCATION</p><h2>MSc Information Technology</h2><p>National Open University of Nigeria · 2013–2017</p></div><div class="certs"><span>Kubernetes and Cloud Native Associate(KCNA) · 2025</span><span>Google IT Support Professional Certificate · 2024</span><span>Cloud Security · 2024</span><span>ALX Professional Foundation · 2024</span><span>ALX AI Career Essential · 2024</span></div></div></section>
+
+<section id="contact" class="section contact"><p class="label">07 / CONTACT</p><h2>Have any support problem<br>worth solving?</h2><p class="copy">I'm open to remote Cloud, Automation, DevOps, infrastructure, technical support and AI-focused opportunities.</p><div class="actions"><a class="button primary" href="mailto:{{ site.email }}">Email me ↗</a><a class="button ghost" href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn ↗</a></div></section>

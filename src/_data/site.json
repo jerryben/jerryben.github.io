@@ -1,0 +1,20 @@
+{
+  "name": "Jerry",
+  "role": "Cloud, Automation & DevOps Engineer",
+  "title": "Jerry | Cloud & DevOps Engineer",
+  "description": "Jerry — Cloud & DevOps Engineer, Network & Systems Infrastructure Professional.",
+  "url": "https://jerryben.github.io",
+  "email": "onwohjeremiah@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/jerrybenoc",
+  "github": "https://github.com/jerryben",
+  "gitlab": "https://gitlab.com/jerryben",
+  "location": "Based in Nigeria",
+  "availability": "Available for remote work",
+  "nav": [
+    { "label": "About", "url": "/#about" },
+    { "label": "Expertise", "url": "/#expertise" },
+    { "label": "Projects", "url": "/projects/" },
+    { "label": "Blog", "url": "/blog/" },
+    { "label": "Contact", "url": "/#contact" }
+  ]
+}

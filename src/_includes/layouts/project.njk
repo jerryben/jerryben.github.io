@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+templateClass: project
+---
+<article class="section post">
+  <p class="label"><a href="{{ '/projects/' | url }}">← PROJECTS</a></p>
+  <header class="post-header">
+    <small>{{ category }}{% if status %} · {{ status }}{% endif %}</small>
+    <h1>{{ title }}</h1>
+    {% if tools %}<div class="tags">{% for tool in tools %}<b>{{ tool }}</b>{% endfor %}</div>{% endif %}
+  </header>
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+  <footer class="post-footer">
+    {% if link %}<a class="button primary" href="{{ link }}" target="_blank" rel="noopener">Visit project ↗</a>{% endif %}
+    <a class="button ghost" href="{{ '/projects/' | url }}">← Back to all projects</a>
+  </footer>
+</article>

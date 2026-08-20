@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: Projects | Jerry
+description: Things Jerry is building and exploring — cloud, DevOps, AI infrastructure and language AI.
+---
+<section class="section">
+  <div class="head">
+    <div><p class="label">PROJECTS</p><h2>Everything I'm building and exploring.</h2></div>
+    <p class="muted">Each card links to a full write-up — what it does, how it's built, and why.</p>
+  </div>
+  <div class="grid projects">
+    {% for project in collections.projects %}
+      {% include "partials/project-card.njk" %}
+    {% endfor %}
+  </div>
+</section>

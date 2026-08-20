@@ -1,0 +1,21 @@
+{
+  "name": "jerry-profile-site",
+  "version": "1.0.0",
+  "description": "Jerry's portfolio, blog, and project showcase — built with Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve --port=8080",
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "keywords": [],
+  "author": "Jerry",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "markdown-it-anchor": "^9.2.1",
+    "markdown-it-footnote": "^4.0.0"
+  }
+}

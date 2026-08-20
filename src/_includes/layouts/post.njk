@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+templateClass: post
+---
+<article class="section post">
+  <p class="label"><a href="{{ '/blog/' | url }}">← BLOG</a></p>
+  <header class="post-header">
+    <h1>{{ title }}</h1>
+    <p class="post-meta">{{ page.date | readableDate }} · {{ content | readingTime }}</p>
+    {% if tags %}
+    <div class="tags">{% for tag in tags %}<b>{{ tag }}</b>{% endfor %}</div>
+    {% endif %}
+  </header>
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+  <footer class="post-footer">
+    <a class="button ghost" href="{{ '/blog/' | url }}">← Back to all posts</a>
+  </footer>
+</article>

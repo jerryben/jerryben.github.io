@@ -1,0 +1,26 @@
+<div id="chat-widget" class="chat-widget" data-state="closed">
+  <button id="chat-toggle" class="chat-toggle" aria-expanded="false" aria-controls="chat-panel" aria-label="Open chat with Jerry's assistant">
+    <span class="chat-toggle-icon chat-toggle-icon--open">&gt;_</span>
+    <span class="chat-toggle-icon chat-toggle-icon--close">&times;</span>
+  </button>
+
+  <section id="chat-panel" class="chat-panel" role="dialog" aria-modal="false" aria-labelledby="chat-title" hidden>
+    <header class="chat-panel-bar">
+      <i></i><i></i><i></i>
+      <span id="chat-title">jerry@site:~/assistant</span>
+    </header>
+
+    <div id="chat-log" class="chat-log" aria-live="polite">
+      <div class="chat-msg chat-msg--bot">
+        <p>Hi, I'm Jerry's site assistant. Ask me about his skills, projects, or how to get in touch — I'll answer from what's on this site.</p>
+      </div>
+    </div>
+
+    <form id="chat-form" class="chat-form">
+      <label for="chat-input" class="sr-only">Type a message</label>
+      <textarea id="chat-input" name="message" rows="1" placeholder="Ask a question…" autocomplete="off" required></textarea>
+      <button type="submit" id="chat-send" aria-label="Send message">→</button>
+    </form>
+    <p class="chat-disclaimer">Answers are generated from this site's content and may not always be accurate.</p>
+  </section>
+</div>

@@ -1,0 +1,13 @@
+name = "jerry-site-chat"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+
+# ANTHROPIC_API_KEY is a secret, not set here.
+# After installing wrangler, run:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#
+# Optional next steps once this is working:
+#   - Add a rate limit (Cloudflare dashboard → your Worker → Settings → Rate limiting rules,
+#     or a Durable Object / Workers KV counter keyed by CF-Connecting-IP)
+#   - Bind a KV namespace or Vectorize index if you outgrow the bundled
+#     knowledge-base.json (see docs/CHATBOT.md in the project root)
