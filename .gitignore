@@ -1,6 +1,10 @@
+# Ignore files
 node_modules/
 _site/
-.cache/
-.DS_Store
 .env
+wrangler.toml
+wrangler.json
 .wrangler/
+.DS_Store
+*.log
+dist/
