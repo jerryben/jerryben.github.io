@@ -213,16 +213,17 @@ deploy_to_k8s:
 
 ### Process Screenshots
 
-!gitlab-ci1.png
+![trigger_deployment](/assets/images/gitlab-cicd/gitlab-ci1.png)
 
-/home/jerry/Downloads/gitlab-ci1.png
-!gitlab5.png
 
-!Gitlab-rollout.png
+![deployment process](/assets/images/gitlab-cicd/gitlab-k8s.png)
 
-!gitlab-deployment.png
 
-!gitlab-ci4.png
+![Gitlab-rollout successful](/assets/images/gitlab-cicd/Gitlab-rollout.png)
+
+![deployment confirmation](/assets/images/gitlab-cicd/gitlab-deployment.png)
+
+![deployed app running](/assets/images/gitlab-cicd/gitlab-ci4.png)
 
 ## Debugging & Troubleshooting
 
